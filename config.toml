@@ -1,4 +1,4 @@
-baseURL = "https://jjcapellan.github.io/hugo-theme-jj-demo/"             # Your site root domain.
+baseURL = "https://jjcapellan.github.io/demojjtheme/"             # Your site root domain.
 title = "Site Title"                       # Site title. Used in head meta tags.
 copyright = "Copyright © 2020 Your Name"   # Copyright notice.
 
