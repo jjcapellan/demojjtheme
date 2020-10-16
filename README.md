@@ -1,0 +1,1 @@
+Demo of the JJ theme for Hugo static site generator.

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <title>Site Title</title>
+    <meta http-equiv="content-language" content="en-us">
+    <meta name="description"
+        content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="stylesheet" href="https://jjcapellan.github.io/hugo-theme-jj-demo/css/sanitize.min.css">
+    
+    
+    <link rel="stylesheet" href="https://jjcapellan.github.io/hugo-theme-jj-demo/css/styles.min.css">
+    
+    
+</head><body>
+        <div class="wrapper"><header id="header" class="container-padding">
+    <div id="inner-header" class="inner-container">
+        
+            <a href="/">
+                <img id="brand-logo" src="/imgs/logo.svg" alt="logo">
+            </a>
+        
+        
+            <a href="/">
+                <span id="brand-name">JJ Theme</span>
+            </a>
+        
+        <nav id="header-nav">
+            
+                <a href="/hugo-theme-jj-demo/">Home</a>            
+            
+                <a href="/hugo-theme-jj-demo/tags/">Tags</a>            
+            
+                <a href="/hugo-theme-jj-demo/about/about">About</a>            
+            
+            <a id="more" class="clickable">More</a>
+            <div id="submenu" class="submenu-closed"></div>
+        </nav>
+        
+            <form id="form-search" action="/search/" method="GET">            
+                <svg id="btsearch" class="header-icon clickable">
+                    <use href="/imgs/jj-icons.svg#search"></use>
+                </svg>
+            </form>
+            <input form="form-search" type="text" name="term" id="tbsearch" placeholder="Search...">
+        
+    </div>
+</header><div id="content" class="container-padding">
+
+<div id="search-results" class="inner-container content-padding">
+</div>
+<script>
+const search = {};
+search.searchDiv = document.getElementById('search-results');
+
+search.getParam = function () {
+    return window.location.search.split('=')[1].split(/\++/);
+    
+}
+
+search.getFilter = function (terms) {
+    const f = (page) => {
+        if (!page.title) {
+            return false;
+        }
+
+        function foundInString(terms, str){
+            for(let i=0; i<terms.length;i++){
+                if(str.toLowerCase().indexOf(terms[i].toLowerCase()) != -1){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        function foundInArray(terms, arr){
+            for(let i=0; i<terms.length;i++){
+                if(arr.map(item => item.toLowerCase()).indexOf(terms[i]) != -1){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        if (foundInString(terms, page.title)) {
+            return true;
+        }
+        if (page.tags && foundInArray(terms, page.tags)) {
+            return true;
+        }
+        if (page.description && foundInString(terms, page.description)) {
+            return true;
+        }
+        if (page.content && foundInArray(terms, page.content)) {
+            return true;
+        }
+        return false;
+    }
+    return f;
+}
+
+search.showResults = function (data, term) {
+    data = data.filter(search.getFilter(term));
+
+    if (data.length == 0) {
+        let warning = document.createElement('h3');
+        warning.innerText = "No results found";
+        search.searchDiv.append(warning);
+        return;
+    }
+
+    function addTitle(page) {
+        let h2 = document.createElement('h2');
+        let a = document.createElement('a');
+        a.setAttribute('href', page.uri);
+        a.setAttribute('class', 'color-title');
+        a.innerText = page.title;
+        h2.append(a);
+        search.searchDiv.appendChild(h2);
+    }
+
+    function addPostData(page) {
+        let div = document.createElement('div');
+        div.setAttribute('class', 'post-data');
+
+        function addDate() {
+            let span = document.createElement('span');
+            span.innerText = page.date;
+            div.appendChild(span);
+        }
+
+        function addTagIcon() {
+            let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            let use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+            svg.setAttribute('class', 'icon');
+            use.setAttribute('href', '/imgs/jj-icons.svg#tag');
+            svg.appendChild(use);
+            div.appendChild(svg);
+        }
+
+        function addTags(){
+            if(page.tags == null){
+                return;
+            }
+            let tags = page.tags;
+            tags.forEach(tag => {
+                let a = document.createElement('a');
+                a.setAttribute('href',`/tags/${tag}`);
+                a.setAttribute('class', 'post-tag');
+                a.innerText = `#${tag}`;
+                div.appendChild(a);
+            });            
+        }
+
+        addDate();
+        addTagIcon();
+        addTags();
+        search.searchDiv.appendChild(div);
+    }
+
+    let msg = data.length > 1 ? `${data.length} "results found":`: `${data.length} "result found":`;
+    msg = msg.replace(/\"/g,'');
+    let h3 = document.createElement('h3');
+    h3.innerText = msg;
+    search.searchDiv.appendChild(h3);
+
+    data.forEach(page => {
+        addTitle(page);
+        addPostData(page);
+        let hr = document.createElement('hr');
+        search.searchDiv.appendChild(hr);
+    });
+
+}
+
+fetch('/search.json')
+    .then(response => response.json())
+    .then(data => search.showResults(data, search.getParam()));
+
+</script>
+
+
+        </div><footer id="footer" class="container-padding flex-column">
+    <div class="flex-row .flex-row-center">
+        
+          
+          <a href="#">
+            <svg class = "social-icon">
+                <use href="/imgs/jj-icons.svg#twitter"></use>
+            </svg>
+          </a>
+          
+        
+          
+          <a href="#">
+            <svg class = "social-icon">
+                <use href="/imgs/jj-icons.svg#facebook"></use>
+            </svg>
+          </a>
+          
+        
+          
+          <a href="#">
+            <svg class = "social-icon">
+                <use href="/imgs/jj-icons.svg#github"></use>
+            </svg>
+          </a>
+          
+        
+          
+          <a href="#">
+            <svg class = "social-icon">
+                <use href="/imgs/jj-icons.svg#instagram"></use>
+            </svg>
+          </a>
+          
+        
+          
+          <a href="">
+            <svg class = "social-icon">
+                <use href="/imgs/jj-icons.svg#linkedin"></use>
+            </svg>
+          </a>
+          
+        
+    </div>
+    <br>
+    <span>Copyright © 2020 Your Name.</span>
+    <span>Powered by <a class="" href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/jjcapellan/hugo-theme-jj/">JJ</a></span>
+    
+    
+    <script src="https://jjcapellan.github.io/hugo-theme-jj-demo/js/app.min.js"></script>
+</footer></div>
+    </body>
+</html>

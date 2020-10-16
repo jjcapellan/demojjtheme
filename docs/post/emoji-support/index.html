@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <title>Emoji Support | Site Title</title>
+    <meta http-equiv="content-language" content="en-us">
+    <meta name="description"
+        content="Guide to emoji usage in Hugo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="stylesheet" href="https://jjcapellan.github.io/hugo-theme-jj-demo/css/sanitize.min.css">
+    
+    
+    <link rel="stylesheet" href="https://jjcapellan.github.io/hugo-theme-jj-demo/css/styles.min.css">
+    
+    
+</head><body>
+        <div class="wrapper"><header id="header" class="container-padding">
+    <div id="inner-header" class="inner-container">
+        
+            <a href="/">
+                <img id="brand-logo" src="/imgs/logo.svg" alt="logo">
+            </a>
+        
+        
+            <a href="/">
+                <span id="brand-name">JJ Theme</span>
+            </a>
+        
+        <nav id="header-nav">
+            
+                <a href="/hugo-theme-jj-demo/">Home</a>            
+            
+                <a href="/hugo-theme-jj-demo/tags/">Tags</a>            
+            
+                <a href="/hugo-theme-jj-demo/about/about">About</a>            
+            
+            <a id="more" class="clickable">More</a>
+            <div id="submenu" class="submenu-closed"></div>
+        </nav>
+        
+            <form id="form-search" action="/search/" method="GET">            
+                <svg id="btsearch" class="header-icon clickable">
+                    <use href="/imgs/jj-icons.svg#search"></use>
+                </svg>
+            </form>
+            <input form="form-search" type="text" name="term" id="tbsearch" placeholder="Search...">
+        
+    </div>
+</header><div id="content" class="container-padding">
+<section class="inner-container content-padding">    
+  <article>
+    
+    <h1 class="color-title">Emoji Support</h1>    
+    <div class="post-data">
+    <span>2019-Mar-05</span>
+    <svg class="icon">
+        <use href="/imgs/jj-icons.svg#tag"></use>
+    </svg>
+    
+    <a href="/tags/emoji" class="post-tag">#emoji </a>
+    
+</div>
+    <p>Emoji can be enabled in a Hugo project in a number of ways.</p>
+<p>The <a href="https://gohugo.io/functions/emojify/"><code>emojify</code></a> function can be called directly in templates or <a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes</a>.</p>
+<p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site&rsquo;s <a href="https://gohugo.io/getting-started/configuration/">configuration</a> and then you can type emoji shorthand codes directly in content files; e.g.</p>
+<!-- raw HTML omitted -->
+<p>The <a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet</a> is a useful reference for emoji shorthand codes.</p>
+<hr>
+<p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">.emoji {
+  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
+}</code></pre></div>    
+    
+    <div class="share-container">
+    <span class="share-legend">Share: </span>
+    
+    
+    
+    <a rel="noopener"
+        href="https://twitter.com/share?ref_src=twsrc%5Etfw&text=Emoji%20Support&hashtags=emoji"
+        target="_blank">
+        <svg class="share-icon">
+            <use href="/imgs/jj-icons.svg#twitter"></use>
+        </svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjjcapellan.github.io%2fhugo-theme-jj-demo%2fpost%2femoji-support%2f" target="_blank">
+        <svg class="share-icon">
+            <use href="/imgs/jj-icons.svg#facebook"></use>
+        </svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a rel="noopener"
+        href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fjjcapellan.github.io%2fhugo-theme-jj-demo%2fpost%2femoji-support%2f&title=Emoji%20Support&summary=%3cp%3eEmoji%20can%20be%20enabled%20in%20a%20Hugo%20project%20in%20a%20number%20of%20ways.%3c%2fp%3e&source=https://jjcapellan.github.io/hugo-theme-jj-demo/"
+        target="_blank">
+        <svg class="share-icon">
+            <use href="/imgs/jj-icons.svg#linkedin"></use>
+        </svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a rel="noopener" href="https://www.reddit.com/submit?url=https%3a%2f%2fjjcapellan.github.io%2fhugo-theme-jj-demo%2fpost%2femoji-support%2f&title=Emoji%20Support"
+        target="_blank">
+        <svg class="share-icon">
+            <use href="/imgs/jj-icons.svg#reddit"></use>
+        </svg>
+    </a>
+    
+    
+</div>
+    
+    
+  </article>
+</section>
+
+        </div><footer id="footer" class="container-padding flex-column">
+    <div class="flex-row .flex-row-center">
+        
+          
+          <a href="#">
+            <svg class = "social-icon">
+                <use href="/imgs/jj-icons.svg#twitter"></use>
+            </svg>
+          </a>
+          
+        
+          
+          <a href="#">
+            <svg class = "social-icon">
+                <use href="/imgs/jj-icons.svg#facebook"></use>
+            </svg>
+          </a>
+          
+        
+          
+          <a href="#">
+            <svg class = "social-icon">
+                <use href="/imgs/jj-icons.svg#github"></use>
+            </svg>
+          </a>
+          
+        
+          
+          <a href="#">
+            <svg class = "social-icon">
+                <use href="/imgs/jj-icons.svg#instagram"></use>
+            </svg>
+          </a>
+          
+        
+          
+          <a href="">
+            <svg class = "social-icon">
+                <use href="/imgs/jj-icons.svg#linkedin"></use>
+            </svg>
+          </a>
+          
+        
+    </div>
+    <br>
+    <span>Copyright © 2020 Your Name.</span>
+    <span>Powered by <a class="" href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/jjcapellan/hugo-theme-jj/">JJ</a></span>
+    
+    
+    <script src="https://jjcapellan.github.io/hugo-theme-jj-demo/js/app.min.js"></script>
+</footer></div>
+    </body>
+</html>

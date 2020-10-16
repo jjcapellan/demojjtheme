@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>figure on Site Title</title>
+    <link>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/figure/</link>
+    <description>Recent content in figure on Site Title</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2020 Your Name</copyright>
+    <lastBuildDate>Thu, 15 Oct 2020 13:33:53 +0200</lastBuildDate><atom:link href="https://jjcapellan.github.io/hugo-theme-jj-demo/tags/figure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fig shortcode</title>
+      <link>https://jjcapellan.github.io/hugo-theme-jj-demo/post/fig-shortcode/</link>
+      <pubDate>Thu, 15 Oct 2020 13:33:53 +0200</pubDate>
+      
+      <guid>https://jjcapellan.github.io/hugo-theme-jj-demo/post/fig-shortcode/</guid>
+      <description>&lt;p&gt;As an alternative to the &lt;em&gt;figure&lt;/em&gt; built-in shortcode of &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, I&amp;rsquo;ve created &lt;em&gt;fig&lt;/em&gt; shortcode for &lt;a href=&#34;https://github.com/jjcapellan/hugo-theme-jj&#34;&gt;JJ theme&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
