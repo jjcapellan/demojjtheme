@@ -20,7 +20,7 @@
     <div id="inner-header" class="inner-container">
         
             <a href="/">
-                <img id="brand-logo" src="/imgs/logo.svg" alt="logo">
+                <img id="brand-logo" src="/demojjtheme/imgs/logo.svg" alt="logo">
             </a>
         
         
@@ -176,7 +176,7 @@ search.showResults = function (data, term) {
 
 }
 
-fetch('/search.json')
+fetch('\/demojjtheme\/search.json')
     .then(response => response.json())
     .then(data => search.showResults(data, search.getParam()));
 
