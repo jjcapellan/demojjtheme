@@ -2,90 +2,90 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Site Title</title>
-    <link>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/</link>
+    <link>https://jjcapellan.github.io/demojjtheme/tags/</link>
     <description>Recent content in Tags on Site Title</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2020 Your Name</copyright>
-    <lastBuildDate>Thu, 15 Oct 2020 13:33:53 +0200</lastBuildDate><atom:link href="https://jjcapellan.github.io/hugo-theme-jj-demo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Oct 2020 13:33:53 +0200</lastBuildDate><atom:link href="https://jjcapellan.github.io/demojjtheme/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>figure</title>
-      <link>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/figure/</link>
+      <link>https://jjcapellan.github.io/demojjtheme/tags/figure/</link>
       <pubDate>Thu, 15 Oct 2020 13:33:53 +0200</pubDate>
       
-      <guid>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/figure/</guid>
+      <guid>https://jjcapellan.github.io/demojjtheme/tags/figure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcode</title>
-      <link>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/shortcode/</link>
+      <link>https://jjcapellan.github.io/demojjtheme/tags/shortcode/</link>
       <pubDate>Thu, 15 Oct 2020 13:33:53 +0200</pubDate>
       
-      <guid>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/shortcode/</guid>
+      <guid>https://jjcapellan.github.io/demojjtheme/tags/shortcode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>css</title>
-      <link>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/css/</link>
+      <link>https://jjcapellan.github.io/demojjtheme/tags/css/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/css/</guid>
+      <guid>https://jjcapellan.github.io/demojjtheme/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/html/</link>
+      <link>https://jjcapellan.github.io/demojjtheme/tags/html/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/html/</guid>
+      <guid>https://jjcapellan.github.io/demojjtheme/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/markdown/</link>
+      <link>https://jjcapellan.github.io/demojjtheme/tags/markdown/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/markdown/</guid>
+      <guid>https://jjcapellan.github.io/demojjtheme/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>privacy</title>
-      <link>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/privacy/</link>
+      <link>https://jjcapellan.github.io/demojjtheme/tags/privacy/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/privacy/</guid>
+      <guid>https://jjcapellan.github.io/demojjtheme/tags/privacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/shortcodes/</link>
+      <link>https://jjcapellan.github.io/demojjtheme/tags/shortcodes/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/shortcodes/</guid>
+      <guid>https://jjcapellan.github.io/demojjtheme/tags/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>text</title>
-      <link>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/text/</link>
+      <link>https://jjcapellan.github.io/demojjtheme/tags/text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/text/</guid>
+      <guid>https://jjcapellan.github.io/demojjtheme/tags/text/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emoji</title>
-      <link>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/emoji/</link>
+      <link>https://jjcapellan.github.io/demojjtheme/tags/emoji/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://jjcapellan.github.io/hugo-theme-jj-demo/tags/emoji/</guid>
+      <guid>https://jjcapellan.github.io/demojjtheme/tags/emoji/</guid>
       <description></description>
     </item>
     
