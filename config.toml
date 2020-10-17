@@ -37,6 +37,8 @@ summaryLength = 70                         # Number of characters taken from the
 [params]
 
   author = ""                                            # Author name.
+
+  description = "Description of the site"                # Site description
   
   share = ["twitter", "facebook", "linkedin", "reddit"]  # Array of share links. 
                                                          # Possible values: "twitter", "facebook", "linkedin", "reddit".
