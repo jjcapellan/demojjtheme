@@ -4,7 +4,7 @@ copyright = "Copyright © 2020 Your Name"   # Copyright notice.
 
 theme = "jj"                               # Current theme
 
-languageCode = "en-us"
+languageCode = "en"
 DefaultContentLanguage = "en"              # User interface language code (currently available translations: en, es)
 
 googleAnalytics= ""                        # Your google analytics id (ex: UA-12345-Y). Empty value disables it.
