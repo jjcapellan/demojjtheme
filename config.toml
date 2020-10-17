@@ -1,11 +1,13 @@
 baseURL = "https://jjcapellan.github.io/demojjtheme/"             # Your site root domain.
+
 title = "Site Title"                       # Site title. Used in head meta tags.
+
 copyright = "Copyright © 2020 Your Name"   # Copyright notice.
 
 theme = "jj"                               # Current theme
 
-languageCode = "en"
-DefaultContentLanguage = "en"              # User interface language code (currently available translations: en, es)
+languageCode = "es"
+defaultContentLanguage = "en"              # User interface language code (currently available translations: en, es)
 
 googleAnalytics= ""                        # Your google analytics id (ex: UA-12345-Y). Empty value disables it.
 disqusShortname = ""                       # Empty value disables it.
