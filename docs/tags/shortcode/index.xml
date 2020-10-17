@@ -14,8 +14,7 @@
       <pubDate>Thu, 15 Oct 2020 13:33:53 +0200</pubDate>
       
       <guid>https://jjcapellan.github.io/demojjtheme/post/fig-shortcode/</guid>
-      <description>&lt;p&gt;As an alternative to the &lt;em&gt;figure&lt;/em&gt; built-in shortcode of &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, I&amp;rsquo;ve created &lt;em&gt;fig&lt;/em&gt; shortcode for &lt;a href=&#34;https://github.com/jjcapellan/hugo-theme-jj&#34;&gt;JJ theme&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Here you can see the result of using &lt;em&gt;fig&lt;/em&gt; shortcode:&lt;/p&gt;</description>
+      <description>&lt;p&gt;As an alternative to the &lt;strong&gt;figure&lt;/strong&gt; built-in shortcode of &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, I&amp;rsquo;ve created a new shortcode more integrated with the &lt;a href=&#34;https://github.com/jjcapellan/hugo-theme-jj&#34;&gt;JJ theme&lt;/a&gt; and with which you can use both positioned and named parameters.&lt;/p&gt;</description>
     </item>
     
   </channel>

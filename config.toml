@@ -10,7 +10,7 @@ DefaultContentLanguage = "en"              # User interface language code (curre
 googleAnalytics= ""                        # Your google analytics id (ex: UA-12345-Y). Empty value disables it.
 disqusShortname = ""                       # Empty value disables it.
 
-paginate = 10                              # Max number of elements showed in lists.
+paginate = 4                               # Max number of elements showed in lists.
 summaryLength = 70                         # Number of characters taken from the post.
 
 
