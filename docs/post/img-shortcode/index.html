@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="utf-8">
+    <title>Img shortcode | Site Title</title>
+    <meta http-equiv="content-language" content="es">
+    <meta name="description"
+        content="Use of shorcode img">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/demojjtheme/imgs/favicon.svg">
+    <link rel="alternate icon" href="/demojjtheme/imgs/favicon.ico">
+    <link rel="mask-icon" href="/demojjtheme/imgs/favicon.svg" color="black">
+    <link rel="icon" type="image/png" href="/demojjtheme/imgs/favicon.svg">
+
+    
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://jjcapellan.github.io/demojjtheme/css/sanitize.min.css">
+    
+    
+    <link rel="stylesheet" href="https://jjcapellan.github.io/demojjtheme/css/styles.min.css">
+    
+    
+    
+</head><body>
+        <div class="wrapper"><header id="header" class="container-padding">
+    <div id="inner-header" class="inner-container">
+        
+            <a href="https://jjcapellan.github.io/demojjtheme/">
+                <img id="brand-logo" src="/demojjtheme/imgs/logo.svg" alt="logo">
+            </a>
+        
+        
+            <a href="https://jjcapellan.github.io/demojjtheme/">
+                <span id="brand-name">JJ Theme</span>
+            </a>
+        
+        <nav id="header-nav">
+            
+                <a href="/demojjtheme/">Home</a>            
+            
+                <a href="/demojjtheme/tags/">Tags</a>            
+            
+                <a href="/demojjtheme/about/about">About</a>            
+            
+                <a href="#">link1</a>            
+            
+                <a href="#">link2</a>            
+            
+                <a href="#">link6</a>            
+            
+            <a id="more" class="clickable">More</a>
+            <div id="submenu" class="submenu-closed"></div>
+        </nav>
+        
+            <form id="form-search" action="/demojjtheme/search/" method="GET">            
+                <svg id="btsearch" class="header-icon clickable">
+                    <use href="/demojjtheme/imgs/jj-icons.svg#search"></use>
+                </svg>
+            </form>
+            <input form="form-search" type="text" name="term" id="tbsearch" placeholder="Search...">
+            <label for="tbsearch">Search</label>
+        
+    </div>
+</header><div id="content" class="container-padding">
+<section class="inner-container content-padding">    
+  <article>
+    
+    <h1 class="color-title">Img shortcode</h1>    
+    <div class="post-data">
+    <span>2020-Oct-15</span>
+    <svg class="icon">
+        <use href="/demojjtheme/imgs/jj-icons.svg#tag"></use>
+    </svg>
+    
+    <a href="/demojjtheme/tags/shortcode" class="post-tag">#shortcode </a>
+    
+    <a href="/demojjtheme/tags/figure" class="post-tag">#figure </a>
+    
+</div>
+    <p>As an alternative to the <strong>figure</strong> built-in shortcode of <a href="https://gohugo.io">Hugo</a>, I&rsquo;ve created a new shortcode more integrated with the <a href="https://github.com/jjcapellan/hugo-theme-jj">JJ theme</a> and with which you can use both positioned and named parameters.</p>
+<p>Here you can see the result of using <strong>img</strong> shortcode:
+
+
+
+
+
+
+
+    
+    
+    
+    
+
+
+
+    
+        
+    
+
+
+
+
+<figure class="scfig">
+    <div class="scfig-container">
+        <img class="scfig-img" src="/demojjtheme/image1.jpg" alt="Calculator">
+        
+        <figcaption class="scfig-caption">Calculator by <a target="_blank" rel="noopener noreferrer" href=https://unsplash.com/@claytonrobbins>Clayton Robbins</a></figcaption>
+        
+    </div>
+</figure>
+
+</p>
+<p>This is the shortcode used to generate html above this line:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang">{{&lt; <span style="color:#a6e22e">img</span> <span style="color:#e6db74">&#34;/image1.jpg&#34;</span> <span style="color:#a6e22e">Calculator</span> <span style="color:#e6db74">&#34;Clayton Robbins&#34;</span> <span style="color:#e6db74">&#34;https://unsplash.com/@claytonrobbins&#34;</span> &gt;}}
+</code></pre></div>
+And this is the generated html:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">figure</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;scfig&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;scfig-container&#34;</span>&gt;
+        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;scfig-img&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/image1.jpg&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Calculator&#34;</span>&gt;        
+        &lt;<span style="color:#f92672">figcaption</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;scfig-caption&#34;</span>&gt;Calculator by &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;noopener noreferrer&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unsplash.com/@claytonrobbins&#34;</span>&gt;Clayton Robbins&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">figcaption</span>&gt;        
+    &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">figure</span>&gt;</code></pre></div></p>
+<h2 id="params">Params:</h2>
+<p><strong>img</strong> uses 4 params, 3 of them optionals, and allows using positioned or named params.<br>
+You must use named params when some intermediate param is omitted.</p>
+<div class="scfig">
+<div class="scfig-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Position</th>
+<th>Name</th>
+<th>Description</th>
+<th style="text-align:center">Required?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td><strong>src</strong></td>
+<td>URL of the image</td>
+<td style="text-align:center">yes</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td><strong>caption</strong></td>
+<td>Title or description of the image</td>
+<td style="text-align:center">no</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td><strong>attr</strong></td>
+<td>Attribution of the image, author or source</td>
+<td style="text-align:center">no</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td><strong>attrlink</strong></td>
+<td>Attribution link</td>
+<td style="text-align:center">no</td>
+</tr>
+</tbody>
+</table>
+<div class="scfig-caption" style="text-align:center;">Fig.1 img params</div>
+</div>
+</div>
+<p>Examples:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#75715e">// Positioned params
+</span><span style="color:#75715e"></span>{{&lt; <span style="color:#a6e22e">img</span> <span style="color:#e6db74">&#34;/image1.jpg&#34;</span> <span style="color:#a6e22e">Calculator</span> <span style="color:#e6db74">&#34;Clayton Robbins&#34;</span> <span style="color:#e6db74">&#34;https://unsplash.com/@claytonrobbins&#34;</span> &gt;}}
+{{&lt; <span style="color:#a6e22e">img</span> <span style="color:#e6db74">&#34;/image1.jpg&#34;</span> <span style="color:#a6e22e">Calculator</span> &gt;}}
+{{&lt; <span style="color:#a6e22e">img</span> <span style="color:#e6db74">&#34;/image1.jpg&#34;</span> &gt;}}
+<span style="color:#75715e">// Named params
+</span><span style="color:#75715e"></span>{{&lt; <span style="color:#a6e22e">img</span> <span style="color:#a6e22e">src</span>=<span style="color:#e6db74">&#34;/image1.jpg&#34;</span> <span style="color:#a6e22e">attr</span>=<span style="color:#e6db74">&#34;Clayton Robbins&#34;</span> <span style="color:#a6e22e">attrlink</span>=<span style="color:#e6db74">&#34;https://unsplash.com/@claytonrobbins&#34;</span> &gt;}}
+</code></pre></div></p>    
+    
+    <div class="share-container">
+    <span class="share-legend">Share: </span>
+    
+    
+    
+    <a rel="noopener"
+        href="https://twitter.com/share?ref_src=twsrc%5Etfw&text=Img%20shortcode&hashtags=shortcode%2cfigure"
+        target="_blank">
+        <svg class="share-icon">
+            <title>twitter</title>
+            <use href="/demojjtheme/imgs/jj-icons.svg#twitter"></use>
+        </svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjjcapellan.github.io%2fdemojjtheme%2fpost%2fimg-shortcode%2f" target="_blank">
+        <svg class="share-icon">
+            <title>facebook</title>
+            <use href="/demojjtheme/imgs/jj-icons.svg#facebook"></use>
+        </svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a rel="noopener"
+        href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fjjcapellan.github.io%2fdemojjtheme%2fpost%2fimg-shortcode%2f&title=Img%20shortcode&summary=%3cp%3eAs%20an%20alternative%20to%20the%20%3cstrong%3efigure%3c%2fstrong%3e%20built-in%20shortcode%20of%20%3ca%20href%3d%22https%3a%2f%2fgohugo.io%22%3eHugo%3c%2fa%3e%2c%20I%26rsquo%3bve%20created%20a%20new%20shortcode%20more%20integrated%20with%20the%20%3ca%20href%3d%22https%3a%2f%2fgithub.com%2fjjcapellan%2fhugo-theme-jj%22%3eJJ%20theme%3c%2fa%3e%20and%20with%20which%20you%20can%20use%20both%20positioned%20and%20named%20parameters.%3c%2fp%3e&source=https://jjcapellan.github.io/demojjtheme/"
+        target="_blank">
+        <svg class="share-icon">
+            <title>linkedin</title>
+            <use href="/demojjtheme/imgs/jj-icons.svg#linkedin"></use>
+        </svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a rel="noopener" href="https://www.reddit.com/submit?url=https%3a%2f%2fjjcapellan.github.io%2fdemojjtheme%2fpost%2fimg-shortcode%2f&title=Img%20shortcode"
+        target="_blank">
+        <svg class="share-icon">
+            <title>reddit</title>
+            <use href="/demojjtheme/imgs/jj-icons.svg#reddit"></use>
+        </svg>
+    </a>
+    
+    
+</div>
+    
+    
+  </article>
+</section>
+
+        </div><footer id="footer" class="container-padding flex-column">
+    <div class="flex-row .flex-row-center">
+        
+          
+          <a href="#">
+            <svg class = "social-icon">
+                <title>twitter</title>
+                <use href="/demojjtheme/imgs/jj-icons.svg#twitter"></use>
+            </svg>
+          </a>
+          
+        
+          
+          <a href="#">
+            <svg class = "social-icon">
+                <title>facebook</title>
+                <use href="/demojjtheme/imgs/jj-icons.svg#facebook"></use>
+            </svg>
+          </a>
+          
+        
+          
+          <a href="#">
+            <svg class = "social-icon">
+                <title>github</title>
+                <use href="/demojjtheme/imgs/jj-icons.svg#github"></use>
+            </svg>
+          </a>
+          
+        
+          
+          <a href="#">
+            <svg class = "social-icon">
+                <title>instagram</title>
+                <use href="/demojjtheme/imgs/jj-icons.svg#instagram"></use>
+            </svg>
+          </a>
+          
+        
+          
+          <a href="">
+            <svg class = "social-icon">
+                <title>linkedin</title>
+                <use href="/demojjtheme/imgs/jj-icons.svg#linkedin"></use>
+            </svg>
+          </a>
+          
+        
+    </div>
+    <br>
+    <span>Copyright © 2020 Your Name.</span>
+    <span>Powered by <a class="" href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/jjcapellan/hugo-theme-jj/">JJ Theme</a></span>
+    
+    
+    <script src="https://jjcapellan.github.io/demojjtheme/js/app.min.js"></script>
+</footer></div>
+    </body>
+</html>

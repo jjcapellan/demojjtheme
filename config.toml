@@ -33,6 +33,21 @@ summaryLength = 70                         # Number of characters taken from the
         name = "Tags"
         url = "/tags/"
         weight = 2
+    [[Menu.main]]
+        identifier = "link1"
+        name = "link1"
+        url = "#"
+        weight = 4
+    [[Menu.main]]
+        identifier = "link2"
+        name = "link2"
+        url = "#"
+        weight = 5
+    [[Menu.main]]
+        identifier = "link6"
+        name = "link6"
+        url = "#"
+        weight = 6
 
 
 
@@ -99,6 +114,7 @@ summaryLength = 70                         # Number of characters taken from the
 
 
 [markup]
+  defaultMarkdownHandler = "goldmark"
   [markup.highlight]
     codeFences = true
     guessSyntax = false
@@ -109,6 +125,9 @@ summaryLength = 70                         # Number of characters taken from the
     noClasses = true
     style = "monokai"
     tabWidth = 4
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 
 # Don't change this.
